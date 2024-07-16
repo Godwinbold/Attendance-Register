@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="https://nnpcgroup.com/" class="text-white">
+                <img src="images/Logo18.jpg" alt="Logo" class="h-10">
+            </a>
+            <div>
+                <ul class="">
+                    <li><a href="index.html" class="text-white hover:text-gray-400">Home</a></li>
+                    <!-- <li><a href="#" class="text-white hover:text-gray-400">Link</a></li> -->
+                    <!-- <li class="relative group">
+                        <a href="#" class="text-white hover:text-gray-400">Dropdown</a>
+                        <ul class="absolute hidden bg-white text-gray-800 group-hover:block mt-2 shadow-lg rounded">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Action</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Another action</a></li>
+                            <li><hr class="my-1"></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="text-white opacity-50 cursor-not-allowed">Disabled</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto my-5 flex-grow">
+        <div class="bg-white p-5 rounded-lg shadow-md">
+            <div id="departmentAccordion">
+                <!-- Corporate Services Department -->
+                <div class="mb-4">
+                    <h2 class="text-xl font-semibold mb-2">
+                        <button class="w-full text-left focus:outline-none focus:ring-2 focus:ring-indigo-600" type="button" onclick="toggleAccordion('collapseIT')">
+                            Corporate Services Department
+                        </button>
+                    </h2>
+                    <div id="collapseIT" class="hidden">
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <ul class="space-y-2">
+                                <li class="bg-white p-3 rounded-lg shadow flex justify-between items-center">
+                                    <span>John Doe</span>
+                                    <div>
+                                        <button type="button" class="bg-green-500 text-white px-3 py-1 rounded-lg ml-2 hover:bg-green-700" onclick="signIn('John Doe', 'Corporate Services')">Sign In</button>
+                                        <button type="button" class="bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-red-700" onclick="signOut('John Doe', 'Corporate Services')">Sign Out</button>
+                                    </div>
+                                </li>
+                                <!-- Repeat for other members -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legal Department -->
+                <div class="mb-4">
+                    <h2 class="text-xl font-semibold mb-2">
+                        <button class="w-full text-left focus:outline-none focus:ring-2 focus:ring-indigo-600" type="button" onclick="toggleAccordion('collapseLegal')">
+                            Legal Department
+                        </button>
+                    </h2>
+                    <div id="collapseLegal" class="hidden">
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <ul class="space-y-2">
+                                <li class="bg-white p-3 rounded-lg shadow flex justify-between items-center">
+                                    <span>Alice Johnson</span>
+                                    <div>
+                                        <button type="button" class="bg-green-500 text-white px-3 py-1 rounded-lg ml-2 hover:bg-green-700" onclick="signIn('Alice Johnson', 'Legal')">Sign In</button>
+                                        <button type="button" class="bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-red-700" onclick="signOut('Alice Johnson', 'Legal')">Sign Out</button>
+                                    </div>
+                                </li>
+                                <!-- Repeat for other members -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Finance Department -->
+                <div class="mb-4">
+                    <h2 class="text-xl font-semibold mb-2">
+                        <button class="w-full text-left focus:outline-none focus:ring-2 focus:ring-indigo-600" type="button" onclick="toggleAccordion('collapseFinance')">
+                            Finance Department
+                        </button>
+                    </h2>
+                    <div id="collapseFinance" class="hidden">
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <ul class="space-y-2">
+                                <li class="bg-white p-3 rounded-lg shadow flex justify-between items-center">
+                                    <span>Carol White</span>
+                                    <div>
+                                        <button type="button" class="bg-green-500 text-white px-3 py-1 rounded-lg ml-2 hover:bg-green-700" onclick="signIn('Carol White', 'Finance')">Sign In</button>
+                                        <button type="button" class="bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-red-700" onclick="signOut('Carol White', 'Finance')">Sign Out</button>
+                                    </div>
+                                </li>
+                                <!-- Repeat for other members -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HSE Department -->
+                <div class="mb-4">
+                    <h2 class="text-xl font-semibold mb-2">
+                        <button class="w-full text-left focus:outline-none focus:ring-2 focus:ring-indigo-600" type="button" onclick="toggleAccordion('collapseHSE')">
+                            HSE Department
+                        </button>
+                    </h2>
+                    <div id="collapseHSE" class="hidden">
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <ul class="space-y-2">
+                                <li class="bg-white p-3 rounded-lg shadow flex justify-between items-center">
+                                    <span>Bob Brown</span>
+                                    <div>
+                                        <button type="button" class="bg-green-500 text-white px-3 py-1 rounded-lg ml-2 hover:bg-green-700" onclick="signIn('Bob Brown', 'HSE')">Sign In</button>
+                                        <button type="button" class="bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-red-700" onclick="signOut('Bob Brown', 'HSE')">Sign Out</button>
+                                    </div>
+                                </li>
+                                <!-- Repeat for other members -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-green-400 text-center py-4 mt-8">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2024 NNPC. All rights reserved.</p>
+                <p>
+                    <a href="#" class="text-blue-400 hover:underline">Privacy Policy</a> | 
+                    <a href="#" class="text-blue-400 hover:underline">Terms of Service</a>
+                </p>
+                <p>Follow us on: 
+                    <a href="#" class="text-blue-400 hover:underline">Facebook</a>, 
+                    <a href="#" class="text-blue-400 hover:underline">Twitter</a>, 
+                    <a href="#" class="text-blue-400 hover:underline">Instagram</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function signIn(staffName, department) {
+            alert(staffName + " from " + department + " signed in at " + new Date().toLocaleTimeString());
+        }
+
+        function signOut(staffName, department) {
+            alert(staffName + " from " + department + " signed out at " + new Date().toLocaleTimeString());
+        }
+
+        function toggleAccordion(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+    </script>
+
+</body>
+</html>
