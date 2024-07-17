@@ -16,7 +16,7 @@
 
 .index-page {
   min-height: 100vh;
-  background-image: linear-gradient(rgb(0,0,0,0.40),rgb(0,0,0,0.60)), url('images/Logo18.jpg');
+  background-image: linear-gradient(rgb(0,0,0,0.40),rgb(0,0,0,0.99)), url('images/Logo18.jpg');
   background-repeat: no-repeat;
   /* background-size: cover; */
   background-position: center;
