@@ -4,4 +4,26 @@
 
 :root {
   --bs-body-bg: var(--bs-gray-100);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.index-page {
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(0,0,0,0.40),rgb(0,0,0,0.60)), url('images/Logo18.jpg');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
 }
